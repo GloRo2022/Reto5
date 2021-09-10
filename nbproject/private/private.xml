@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/model/ClientesModel.java</file>
-            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/utils/db_credentials.json</file>
-            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/utils/db_creation.sql</file>
-            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/utils/ConnectionDB.java</file>
+            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/view/MainWindow.java</file>
+            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/controller/BiciController.java</file>
+            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/view/viewbicicleta.java</file>
+            <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/access/BicicletasDAO.java</file>
             <file>file:/Users/FAMILIAGGG/NetBeansProjects/Reto5/src/model/BicicletasModel.java</file>
         </group>
     </open-files>
