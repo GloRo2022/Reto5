@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package view;
 
-/**
- *
- * @author FAMILIAGGG
- */
+import access.BicicletasDAO;
+import controller.BiciController;
+import model.BicicletasModel;
+
 public class MainWindow {
-    
+      BicicletasModel bicicleta     = new BicicletasModel();
+      BicicletasDAO bicicletadao    = new BicicletasDAO();
+      viewbicicleta bicicletavista  = new viewbicicleta();
+      BiciController controlador    = new BiciController (bicicleta, bicicletadao, bicicletavista);
+      
+      controlador.iniciar();
+      bicicletavista.setVisible(true); 
+      
+      
 }
+
+     

@@ -57,7 +57,7 @@ public class BicicletasDAO {
         return bicicleta;
     }
     
-    public void agregarBicicleta(BicicletasModel bicicleta){
+    public boolean agregarBicicleta(BicicletasModel bicicleta){
         try {
             if(conn == null)
                 conn = ConnectionDB.getConnection();
@@ -71,15 +71,16 @@ public class BicicletasDAO {
             statement.setInt(4, bicicleta.getBicId());
             int rowsInserted = statement.executeUpdate();
             
-            if(rowsInserted > 0) 
-                JOptionPane.showMessageDialog(null, "El registro fue agregado exitosamente !");
+            //if(rowsInserted > 0) 
+                //JOptionPane.showMessageDialog(null, "El registro fue agregado exitosamente !");
         }catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Código : " + e.getErrorCode() 
                                         + "\nError :" + e.getMessage());
         }
+            return true;
     }
     
-    public void actualizarBicicleta(BicicletasModel bicicleta){
+    public boolean actualizarBicicleta(BicicletasModel bicicleta){
         try {
             if(conn == null)
                 conn = ConnectionDB.getConnection();
@@ -96,9 +97,10 @@ public class BicicletasDAO {
             JOptionPane.showMessageDialog(null, "Código : " + ex.getErrorCode() 
                                         + "\nError :" + ex.getMessage());
         }
+        return true;
     }
     
-    public void eliminarBicicleta(int id){
+    public boolean eliminarBicicleta(int id){
         try {
             if(conn == null)
                 conn = ConnectionDB.getConnection();
@@ -114,6 +116,7 @@ public class BicicletasDAO {
             JOptionPane.showMessageDialog(null, "Código : "
                     + ex.getErrorCode() + "\nError :" + ex.getMessage());
         }
+        return true;
     }
 }
 

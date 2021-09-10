@@ -23,6 +23,9 @@ public class BicicletasModel {
         this.bicPrecio = bicPrecio;
         this.bicAnio = bicAnio;
     }
+    public BicicletasModel() {
+      
+    }
     public BicicletasModel(String bicFabricante, double bicPrecio, int bicAnio) {
         this.bicFabricante = bicFabricante;
         this.bicPrecio = bicPrecio;
@@ -31,6 +34,9 @@ public class BicicletasModel {
     
     public int getBicId() {
         return bicId;
+    }
+    public void setBicId(int bicId) {
+        this.bicId = bicId;
     }
 
     /**

@@ -60,7 +60,7 @@
                           <Component id="jLabel1" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
                           <Component id="jLabel6" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -141,8 +141,8 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="jTextField1" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
-                                              <Component id="jTextField4" min="-2" pref="197" max="-2" attributes="0"/>
+                                              <Component id="txtBicId" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
+                                              <Component id="txtBicAnio" min="-2" pref="197" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace pref="145" max="32767" attributes="0"/>
                                           <Component id="btncrearBicicleta" min="-2" max="-2" attributes="0"/>
@@ -152,8 +152,8 @@
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="jTextField3" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="jTextField2" alignment="0" pref="197" max="32767" attributes="0"/>
+                                              <Component id="txtBicPrecio" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="txtBicFabricante" alignment="0" pref="197" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
@@ -180,34 +180,33 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtBicId" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtBicFabricante" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtFabricante" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtBicPrecio" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtPrecio" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtAnio" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtBicAnio" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btncrearBicicleta" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnactualizarBicicleta" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btneliminarBicicleta" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
                           <Component id="jScrollPane1" min="-2" pref="86" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="btnLimpiar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -273,7 +272,7 @@
             <Property name="text" type="java.lang.String" value="Precio"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="txtBicId">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="1" green="1" red="1" type="rgb"/>
@@ -287,7 +286,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="txtBicFabricante">
           <Properties>
             <Property name="text" type="java.lang.String" value="Escriba el Fabricante"/>
           </Properties>
@@ -295,12 +294,12 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="txtBicPrecio">
           <Properties>
             <Property name="text" type="java.lang.String" value="Escriba el Precio"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtBicPrecioActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -314,7 +313,7 @@
             <Property name="text" type="java.lang.String" value="Anio"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="txtBicAnio">
           <Properties>
             <Property name="text" type="java.lang.String" value="Escriba anio de Fabricaci&#xf3;n"/>
           </Properties>
